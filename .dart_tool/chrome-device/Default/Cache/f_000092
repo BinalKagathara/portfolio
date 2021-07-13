@@ -1,0 +1,348 @@
+define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/google_fonts/src/google_fonts_base.dart', 'packages/carousel_slider/carousel_controller.dart', 'packages/flutter/src/painting/edge_insets.dart', 'packages/folio/widget/serviceCard.dart', 'packages/folio/constants.dart', 'packages/carousel_slider/carousel_options.dart', 'packages/flutter/src/animation/curves.dart'], (function load__packages__folio__sections__services__servicesMobile_dart(dart_sdk, packages__flutter__src__widgets__widget_span$46dart, packages__google_fonts__src__google_fonts_base$46dart, packages__carousel_slider__carousel_controller$46dart, packages__flutter__src__painting__edge_insets$46dart, packages__folio__widget__serviceCard$46dart, packages__folio__constants$46dart, packages__carousel_slider__carousel_options$46dart, packages__flutter__src__animation__curves$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const ui = dart_sdk.ui;
+  const _interceptors = dart_sdk._interceptors;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const media_query = packages__flutter__src__widgets__widget_span$46dart.src__widgets__media_query;
+  const container = packages__flutter__src__widgets__widget_span$46dart.src__widgets__container;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const text = packages__flutter__src__widgets__widget_span$46dart.src__widgets__text;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const google_fonts = packages__google_fonts__src__google_fonts_base$46dart.google_fonts;
+  const carousel_slider = packages__carousel_slider__carousel_controller$46dart.carousel_slider;
+  const edge_insets = packages__flutter__src__painting__edge_insets$46dart.src__painting__edge_insets;
+  const serviceCard = packages__folio__widget__serviceCard$46dart.widget__serviceCard;
+  const constants = packages__folio__constants$46dart.constants;
+  const carousel_options = packages__carousel_slider__carousel_options$46dart.carousel_options;
+  const curves = packages__flutter__src__animation__curves$46dart.src__animation__curves;
+  var servicesMobile = Object.create(dart.library);
+  var $_get = dartx._get;
+  dart._checkModuleNullSafetyMode(false);
+  var T = {
+    _LocationL: () => (T._LocationL = dart.constFn(dart.legacy(widget_inspector._Location)))(),
+    PaddingL: () => (T.PaddingL = dart.constFn(dart.legacy(basic.Padding)))(),
+    BuildContextL: () => (T.BuildContextL = dart.constFn(dart.legacy(framework.BuildContext)))(),
+    intL: () => (T.intL = dart.constFn(dart.legacy(core.int)))(),
+    BuildContextLAndintLAndintLToPaddingL: () => (T.BuildContextLAndintLAndintLToPaddingL = dart.constFn(dart.fnType(T.PaddingL(), [T.BuildContextL(), T.intL(), T.intL()])))(),
+    WidgetL: () => (T.WidgetL = dart.constFn(dart.legacy(framework.Widget)))(),
+    JSArrayOfWidgetL: () => (T.JSArrayOfWidgetL = dart.constFn(_interceptors.JSArray$(T.WidgetL())))()
+  };
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 13,
+        [_Location_line]: 16,
+        [_Location_file]: null
+      });
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 13,
+        [_Location_line]: 17,
+        [_Location_file]: null
+      });
+    },
+    get C1() {
+      return C[1] = dart.constList([C[2] || CT.C2, C[3] || CT.C3], T._LocationL());
+    },
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 15,
+        [_Location_file]: "file:///F:/binal/lib/sections/services/servicesMobile.dart"
+      });
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 13,
+        [_Location_line]: 24,
+        [_Location_file]: null
+      });
+    },
+    get C7() {
+      return C[7] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "textAlign",
+        [_Location_column]: 13,
+        [_Location_line]: 25,
+        [_Location_file]: null
+      });
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 13,
+        [_Location_line]: 26,
+        [_Location_file]: null
+      });
+    },
+    get C5() {
+      return C[5] = dart.constList([C[6] || CT.C6, C[7] || CT.C7, C[8] || CT.C8], T._LocationL());
+    },
+    get C4() {
+      return C[4] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[5] || CT.C5,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 23,
+        [_Location_file]: "file:///F:/binal/lib/sections/services/servicesMobile.dart"
+      });
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: edge_insets.EdgeInsets.prototype,
+        [EdgeInsets_bottom]: 10,
+        [EdgeInsets_right]: 0,
+        [EdgeInsets_top]: 10,
+        [EdgeInsets_left]: 0
+      });
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "cardWidth",
+        [_Location_column]: 21,
+        [_Location_line]: 34,
+        [_Location_file]: null
+      });
+    },
+    get C13() {
+      return C[13] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "serviceIcon",
+        [_Location_column]: 21,
+        [_Location_line]: 35,
+        [_Location_file]: null
+      });
+    },
+    get C14() {
+      return C[14] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "serviceTitle",
+        [_Location_column]: 21,
+        [_Location_line]: 36,
+        [_Location_file]: null
+      });
+    },
+    get C15() {
+      return C[15] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "serviceDescription",
+        [_Location_column]: 21,
+        [_Location_line]: 37,
+        [_Location_file]: null
+      });
+    },
+    get C16() {
+      return C[16] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "serviceLink",
+        [_Location_column]: 21,
+        [_Location_line]: 38,
+        [_Location_file]: null
+      });
+    },
+    get C11() {
+      return C[11] = dart.constList([C[12] || CT.C12, C[13] || CT.C13, C[14] || CT.C14, C[15] || CT.C15, C[16] || CT.C16], T._LocationL());
+    },
+    get C10() {
+      return C[10] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[11] || CT.C11,
+        [_Location_name]: null,
+        [_Location_column]: 26,
+        [_Location_line]: 33,
+        [_Location_file]: "file:///F:/binal/lib/sections/services/servicesMobile.dart"
+      });
+    },
+    get C19() {
+      return C[19] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 19,
+        [_Location_line]: 32,
+        [_Location_file]: null
+      });
+    },
+    get C20() {
+      return C[20] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 19,
+        [_Location_line]: 33,
+        [_Location_file]: null
+      });
+    },
+    get C18() {
+      return C[18] = dart.constList([C[19] || CT.C19, C[20] || CT.C20], T._LocationL());
+    },
+    get C17() {
+      return C[17] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[18] || CT.C18,
+        [_Location_name]: null,
+        [_Location_column]: 17,
+        [_Location_line]: 31,
+        [_Location_file]: "file:///F:/binal/lib/sections/services/servicesMobile.dart"
+      });
+    },
+    get C23() {
+      return C[23] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "itemCount",
+        [_Location_column]: 13,
+        [_Location_line]: 29,
+        [_Location_file]: null
+      });
+    },
+    get C24() {
+      return C[24] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "itemBuilder",
+        [_Location_column]: 13,
+        [_Location_line]: 30,
+        [_Location_file]: null
+      });
+    },
+    get C25() {
+      return C[25] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "options",
+        [_Location_column]: 13,
+        [_Location_line]: 41,
+        [_Location_file]: null
+      });
+    },
+    get C22() {
+      return C[22] = dart.constList([C[23] || CT.C23, C[24] || CT.C24, C[25] || CT.C25], T._LocationL());
+    },
+    get C21() {
+      return C[21] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[22] || CT.C22,
+        [_Location_name]: null,
+        [_Location_column]: 26,
+        [_Location_line]: 28,
+        [_Location_file]: "file:///F:/binal/lib/sections/services/servicesMobile.dart"
+      });
+    },
+    get C28() {
+      return C[28] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 9,
+        [_Location_line]: 14,
+        [_Location_file]: null
+      });
+    },
+    get C27() {
+      return C[27] = dart.constList([C[28] || CT.C28], T._LocationL());
+    },
+    get C26() {
+      return C[26] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[27] || CT.C27,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 13,
+        [_Location_file]: "file:///F:/binal/lib/sections/services/servicesMobile.dart"
+      });
+    },
+    get C31() {
+      return C[31] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 13,
+        [_Location_file]: null
+      });
+    },
+    get C30() {
+      return C[30] = dart.constList([C[31] || CT.C31], T._LocationL());
+    },
+    get C29() {
+      return C[29] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[30] || CT.C30,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 12,
+        [_Location_file]: "file:///F:/binal/lib/sections/services/servicesMobile.dart"
+      });
+    }
+  }, false);
+  var C = Array(32).fill(void 0);
+  var I = ["package:folio/sections/services/servicesMobile.dart"];
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  var EdgeInsets_bottom = dart.privateName(edge_insets, "EdgeInsets.bottom");
+  var EdgeInsets_right = dart.privateName(edge_insets, "EdgeInsets.right");
+  var EdgeInsets_top = dart.privateName(edge_insets, "EdgeInsets.top");
+  var EdgeInsets_left = dart.privateName(edge_insets, "EdgeInsets.left");
+  servicesMobile.ServiceMobile = class ServiceMobile extends framework.StatelessWidget {
+    build(context) {
+      let height = media_query.MediaQuery.of(context).size.height;
+      let width = media_query.MediaQuery.of(context).size.width;
+      return new container.Container.new({child: new basic.Column.new({children: T.JSArrayOfWidgetL().of([new text.Text.new("\nExperience", {style: google_fonts.GoogleFonts.montserrat({fontSize: dart.notNull(height) * 0.06, fontWeight: ui.FontWeight.w400, letterSpacing: 1.0}), $creationLocationd_0dea112b090073317d4: C[0] || CT.C0}), new text.Text.new("Here are something I did! \n\n", {textAlign: ui.TextAlign.center, style: google_fonts.GoogleFonts.montserrat({fontWeight: ui.FontWeight.w200}), $creationLocationd_0dea112b090073317d4: C[4] || CT.C4}), new carousel_slider.CarouselSlider.builder({itemCount: 2, itemBuilder: dart.fn((context, itemIndex, i) => new basic.Padding.new({padding: C[9] || CT.C9, child: new serviceCard.ServiceCard.new({cardWidth: dart.notNull(width) < 650 ? dart.notNull(width) * 0.8 : dart.notNull(width) * 0.5, serviceIcon: constants.kServicesIcons[$_get](i), serviceTitle: constants.kServicesTitles[$_get](i), serviceDescription: constants.kServicesDescriptions[$_get](i), serviceLink: constants.kServicesLinks[$_get](i), $creationLocationd_0dea112b090073317d4: C[10] || CT.C10}), $creationLocationd_0dea112b090073317d4: C[17] || CT.C17}), T.BuildContextLAndintLAndintLToPaddingL()), options: new carousel_options.CarouselOptions.new({height: dart.notNull(height) * 0.45, autoPlay: true, autoPlayInterval: new core.Duration.new({seconds: 5}), enlargeCenterPage: true, autoPlayCurve: curves.Curves.fastOutSlowIn, autoPlayAnimationDuration: new core.Duration.new({milliseconds: 800}), enableInfiniteScroll: false}), $creationLocationd_0dea112b090073317d4: C[21] || CT.C21})]), $creationLocationd_0dea112b090073317d4: C[26] || CT.C26}), $creationLocationd_0dea112b090073317d4: C[29] || CT.C29});
+    }
+  };
+  (servicesMobile.ServiceMobile.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    servicesMobile.ServiceMobile.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = servicesMobile.ServiceMobile.prototype;
+  dart.addTypeTests(servicesMobile.ServiceMobile);
+  dart.addTypeCaches(servicesMobile.ServiceMobile);
+  dart.setMethodSignature(servicesMobile.ServiceMobile, () => ({
+    __proto__: dart.getMethods(servicesMobile.ServiceMobile.__proto__),
+    build: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(framework.BuildContext)])
+  }));
+  dart.setLibraryUri(servicesMobile.ServiceMobile, I[0]);
+  dart.trackLibraries("packages/folio/sections/services/servicesMobile.dart", {
+    "package:folio/sections/services/servicesMobile.dart": servicesMobile
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["servicesMobile.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;UAQ4B;AACjB,mBAAoB,AAAY,AAAK,0BAAd,OAAO;AAC9B,kBAAmB,AAAY,AAAK,0BAAd,OAAO;AACpC,YAAO,qCACE,gCACK,yBACR,kBACE,wBACmB,+CACA,aAAP,MAAM,IAAG,kBACI,mCACR,gEAGnB,kBACE,8CACqB,4BACF,iDAAkC,+EAExC,uDACF,gBACE,SAAc,SAAa,WAAe,MACnD,sDAES,4CACY,aAAN,KAAK,IAAG,MAAY,aAAN,KAAK,IAAG,MAAY,aAAN,KAAK,IAAG,kBAClC,AAAc,gCAAC,CAAC,iBACf,AAAe,iCAAC,CAAC,uBACX,AAAqB,uCAAC,CAAC,gBAC9B,AAAc,gCAAC,CAAC,8KAG5B,kDACU,aAAP,MAAM,IAAG,gBACP,wBACQ,gCAAkB,wBACjB,qBACG,wDACK,qCAAuB,6BAC5B;IAKpC;;;;;;EACF","file":"../../../../packages/folio/sections/services/servicesMobile.dart.lib.js"}');
+  // Exports:
+  return {
+    sections__services__servicesMobile: servicesMobile
+  };
+}));
+
+//# sourceMappingURL=servicesMobile.dart.lib.js.map
